@@ -1,0 +1,35 @@
+module.exports = {
+  defaultTitle: 'Ratna Prema',
+  logo: '',
+  author: 'Ratna Prema',
+  url: 'https://ratnaprema.com',
+  legalName: 'Ratna Prema',
+  defaultDescription: 'I’m Ratna Prema and I’m a Front-End developer with a knack for UI/UX Design!',
+  socialLinks: {
+    twitter: 'http://www.twitter.com/',
+    github: 'https://github.com/',
+    linkedin: 'https://www.linkedin.com/',
+    instagram: 'https://instagram.com/',
+    youtube: 'https://www.youtube.com/',
+    google: 'https://plus.google.com/',
+  },
+  googleAnalyticsID: '',
+  themeColor: '#E98E92',
+  backgroundColor: '#E98E92',
+  social: {
+    facebook: 'appId',
+    twitter: '@',
+  },
+  address: {
+    city: 'City',
+    region: 'Region',
+    country: 'Country',
+    zipCode: 'ZipCode',
+  },
+  contact: {
+    email: 'email',
+    phone: 'phone number',
+  },
+  foundingDate: '',
+  recaptcha_key: '',
+};

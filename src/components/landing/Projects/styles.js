@@ -57,6 +57,21 @@ export const Item = styled.div`
 
 export const Links = styled.div`
 
+ a {
+    background: #e98e92;
+    color: #fff;
+    padding: 8px 24px;
+    display: inline-block;
+    margin-top: 5px;
+    transition: all 0.3s;
+    border-radius: 3px;
+    
+    &:hover {
+      border: 0;
+      padding: 8px 24px;
+    }
+ }
+
 `;
 
 export const Content = styled.div`

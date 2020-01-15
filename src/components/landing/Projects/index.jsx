@@ -2,6 +2,7 @@ import React from 'react'
 import {Card, Container} from 'components/common'
 import {Content, Grid, Item, Links, Wrapper} from './styles'
 import {Button} from '../../common/Button';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Projects = () => {
   let projects = [
@@ -9,7 +10,7 @@ export const Projects = () => {
           id: 1,
           name: 'Easy Invoice',
           description: 'Create and manage multiple clients, invoices from a single dashboard.',
-          demoUrl: '',
+          demoUrl: 'https://easy-invoice-app.firebaseapp.com/',
           sourceUrl: 'easy-invoice',
           stack: 'Angular, Firebase'
       },
@@ -17,7 +18,7 @@ export const Projects = () => {
           id: 2,
           name: 'CSS Explorer',
           description: 'Explore CSS properties interactively in a visual grid. Currently supports Flexbox.',
-          demoUrl: '',
+          demoUrl: 'https://css-explorer-app.netlify.com/',
           sourceUrl: 'css-explorer',
           stack: 'Angular'
       },
@@ -25,7 +26,7 @@ export const Projects = () => {
           id: 3,
           name: 'Visual Email Builder',
           description: 'Drag and drop visual UI builder to create Email Templates.',
-          demoUrl: '',
+          demoUrl: 'https://visual-email-builder.netlify.com/',
           sourceUrl: 'visual-email-builder',
           stack: 'React, React-dnd'
       },
@@ -33,7 +34,7 @@ export const Projects = () => {
           id: 4,
           name: 'CRS Calculator',
           description: 'Calculate the points needed to apply for the permanent residency in Canada.',
-          demoUrl: '',
+          demoUrl: 'https://crs-calculator.netlify.com/',
           sourceUrl: 'crs-calculator',
           stack: 'Vue.js, Element'
       },
@@ -41,10 +42,19 @@ export const Projects = () => {
           id: 5,
           name: 'Github Bulk Delete',
           description: 'Delete multiple Github repositories using this UI tool.',
-          demoUrl: '',
-          sourceUrl: 'github-bulk-delete',
+          demoUrl: 'https://bulk-delete-github.netlify.com/',
+          sourceUrl: 'bulk-delete-github',
           stack: 'Vue.js, TailwindCSS'
-      }
+      },
+      {
+          id: 6,
+          name: 'Personal Website',
+          description: 'Built with illustrations from Undraw and hosted on Netlify. ',
+          demoUrl: 'https://ratnaprema.com/',
+          sourceUrl: 'ratnaprema.com',
+          stack: 'Gatsby.js, Styled Components'
+      },
+
   ];
   return (
     <Wrapper as={Container} id="projects">
@@ -61,9 +71,9 @@ export const Projects = () => {
                 <p>{node.description}</p>
                 <p>Stack: <span>{node.stack}</span></p>
                   <Links>
-                      <Button secondary href={node.demoUrl} target={"_blank"}>
+                      <a href={node.demoUrl} target={"_blank"}>
                           View Demo →
-                      </Button>
+                      </a>
                   </Links>
               </Content>
             </Card>

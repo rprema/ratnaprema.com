@@ -1,8 +1,6 @@
 import React from 'react'
 import {Card, Container} from 'components/common'
 import {Content, Grid, Item, Links, Wrapper} from './styles'
-import {Button} from '../../common/Button';
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Projects = () => {
   let projects = [
@@ -46,15 +44,6 @@ export const Projects = () => {
           sourceUrl: 'bulk-delete-github',
           stack: 'Vue.js, TailwindCSS'
       },
-      {
-          id: 6,
-          name: 'Personal Website',
-          description: 'Built with illustrations from Undraw and hosted on Netlify. ',
-          demoUrl: 'https://ratnaprema.com/',
-          sourceUrl: 'ratnaprema.com',
-          stack: 'Gatsby.js, Styled Components'
-      },
-
   ];
   return (
     <Wrapper as={Container} id="projects">
